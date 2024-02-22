@@ -150,9 +150,11 @@ input[type="submit"] {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 25px;
+
 }
 
 input[type="submit"]:hover {
@@ -190,3 +192,23 @@ label {
   margin-top: 5px;
 }
 
+#back-to-tasks {
+  text-align: center; 
+}
+
+#back-to-tasks a {
+  display: inline-block;
+  padding: 10px 20px; 
+  background-color: #63b5ac; 
+  color: #fff; 
+  border-radius: 10px; 
+  text-decoration: none; 
+  transition: background-color 0.3s ease; 
+  font-family: 'Rubik';
+  font-size: 15px;
+  margin: 0 auto; 
+}
+
+#back-to-tasks a:hover {
+  background-color: #a0c7c3; 
+}
