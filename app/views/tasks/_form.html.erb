@@ -1,8 +1,7 @@
 <%= form_with(model: task) do |form| %>
   <% if task.errors.any? %>
-    <div style="color: red">
+    <div id="error-messages">
       <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
-
       <ul>
         <% task.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -33,5 +32,14 @@
 
   <div>
     <%= form.submit %>
+  </div>
+<% end %>
+
+<% if task.persisted? %>
+  <div class="task">
+    <p class="name"><%= task.name %></p>
+    <p class="description"><%= task.description %></p>
+    <p class="duration"><%= task.duration %></p>
+    <p class="done"><%= task.done ? 'Completed' : 'Not Completed' %></p>
   </div>
 <% end %>
