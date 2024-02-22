@@ -2,6 +2,16 @@
 
 <h1>Tasks</h1>
 
+<h2>Prenez le contrôle de votre vie et de votre travail avec TODOLIST</h2>
+
+
+<h3>
+
+Fini le stress et le chaos ! <br> <br>  Todolist vous aide à organiser vos tâches, à gagner en concentration et à retrouver la sérénité dans votre vie quotidienne. <br> <br>
+Découvrez la puissance de la première application de gestion de tâches et de To-Do List: 
+
+</h3>
+
 <div id="tasks">
   <% @tasks.each do |task| %>
     <%= render task %>
@@ -11,4 +21,9 @@
   <% end %>
 </div>
 
+
+<div id="bouton-nouvelle-tache">
+
 <%= link_to "New task", new_task_path %>
+
+</div>
