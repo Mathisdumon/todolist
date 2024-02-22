@@ -212,3 +212,24 @@ label {
 #back-to-tasks a:hover {
   background-color: #a0c7c3; 
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image1,
+.image2 {
+  margin-right: 10px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  margin-right: 100px; 
+}
+
+.image1 img,
+.image2 img {
+  width: 500px; 
+  border-radius: 10px; 
+  margin-top: 100px;
+}
+
