@@ -343,3 +343,74 @@ footer {
 .lien a:hover {
   text-decoration: underline;
 }
+
+
+.task-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif; 
+  padding-bottom: 50px;
+}
+
+.task-card {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-details {
+  margin-bottom: 10px;
+}
+
+.task-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.task-description {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.task-duration,
+.task-status {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.task-actions {
+  text-align: center;
+}
+
+.show-task-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #63b5ac;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.show-task-link:hover {
+  background-color: #a0c7c3;
+  font-family: 'Rubik', sans-serif; 
+
+}
+
+
+.task-duration{
+  color: #63b5ac;
+  font-weight: bold;
+}
+
+.task-status{
+  font-weight: bold;
+
+}

@@ -17,12 +17,19 @@ Soyez organisé(e) grâce à To-Do List:
 
 </h3>
 
-<div id="tasks">
+<div id="tasks" class="task-cards">
   <% @tasks.each do |task| %>
-    <%= render task %>
-    <p>
-      <%= link_to "Show this task", task %>
-    </p>
+    <div class="task-card">
+      <div class="task-details">
+        <p class="task-name"><%= task.name %></p>
+        <p class="task-description"><%= task.description %></p>
+        <p class="task-duration">Duration: <%= task.duration %></p>
+        <p class="task-status">Status: <%= task.done ? 'Completed' : 'Pending' %></p>
+      </div>
+      <div class="task-actions">
+        <%= link_to "Show", task, class: "show-task-link" %>
+      </div>
+    </div>
   <% end %>
 </div>
 
