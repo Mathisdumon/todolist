@@ -104,13 +104,15 @@ h3 {
 
 
 
-form {
+
+
+.test {
   max-width: 500px;
   margin: 0 auto;
   padding: 50px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  
 }
 
 #error-messages {
@@ -413,4 +415,67 @@ footer {
 .task-status{
   font-weight: bold;
 
+}
+
+
+.task-actions{
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+
+}
+
+a {
+  color: #63b5ac;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a0c7c3;
+}
+
+.back-link {
+  display: block;
+
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+.back-link:hover {
+  color: #a0c7c3;
+}
+
+
+.destroy-task-button {
+  margin-top:20px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #63b5ac;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.destroy-task-button:hover {
+  background-color: #a0c7c3;
+} 
+
+
+
+.modification {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
 }
